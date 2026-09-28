@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusGo - Your Journey, Our Priority</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+    
+    <!-- Module 1: Header/Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🚌</span>
+                <h1>BusGo</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#routes">Routes</a>
+                <a href="#booking">Booking</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <a href="#home">Home</a>
+            <a href="#routes">Routes</a>
+            <a href="#booking">Booking</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Module 2: Hero Section with Search -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1>Your Journey, Our Priority</h1>
+            <p>Travel comfortably with BusGo. Safe, reliable, and affordable bus transportation across the country.</p>
+            
+            <!-- Search Form -->
+            <div class="search-form">
+                <div class="search-row">
+                    <div class="search-field">
+                        <label>From</label>
+                        <input type="text" placeholder="Departure City" id="fromCity">
+                    </div>
+                    <div class="search-field">
+                        <label>To</label>
+                        <input type="text" placeholder="Destination City" id="toCity">
+                    </div>
+                    <div class="search-field">
+                        <label>Date</label>
+                        <input type="date" id="travelDate">
+                    </div>
+                    <div class="search-field">
+                        <label>Passengers</label>
+                        <select id="passengers">
+                            <option value="1">1 Passenger</option>
+                            <option value="2">2 Passengers</option>
+                            <option value="3">3 Passengers</option>
+                            <option value="4">4 Passengers</option>
+                            <option value="5">5+ Passengers</option>
+                        </select>
+                    </div>
+                    <button class="search-btn" id="searchBtn">Search Buses</button>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Routes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Daily Trips</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1M+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Module 3: Popular Routes -->
+    <section class="popular-routes" id="routes">
+        <div class="section-header">
+            <h2>Popular Routes</h2>
+            <p>Explore our most traveled destinations</p>
+        </div>
+        
+        <div class="routes-grid">
+            <div class="route-card">
+                <div class="route-image">🏙️</div>
+                <div class="route-info">
+                    <h3>New York → Boston</h3>
+                    <p class="route-details">4 hours • 215 miles</p>
+                    <p class="route-price">From $29</p>
+                    <div class="route-features">
+                        <span>WiFi</span>
+                        <span>AC</span>
+                        <span>USB</span>
+                    </div>
+                    <button class="book-route-btn">Book Now</button>
+                </div>
+            </div>
+            
+            <div class="route-card">
+                <div class="route-image">🌆</div>
+                <div class="route-info">
+                    <h3>Los Angeles → San Francisco</h3>
+                    <p class="route-details">6 hours • 382 miles</p>
+                    <p class="route-price">From $45</p>
+                    <div class="route-features">
+                        <span>WiFi</span>
+                        <span>AC</span>
+                        <span>Snacks</span>
+                    </div>
+                    <button class="book-route-btn">Book Now</button>
+                </div>
+            </div>
+            
+            <div class="route-card">
+                <div class="route-image">🏛️</div>
+                <div class="route-info">
+                    <h3>Chicago → Detroit</h3>
+                    <p class="route-details">5 hours • 283 miles</p>
+                    <p class="route-price">From $35</p>
+                    <div class="route-features">
+                        <span>WiFi</span>
+                        <span>AC</span>
+                        <span>USB</span>
+                    </div>
+                    <button class="book-route-btn">Book Now</button>
+                </div>
+            </div>
+            
+            <div class="route-card">
+                <div class="route-image">🌴</div>
+                <div class="route-info">
+                    <h3>Miami → Orlando</h3>
+                    <p class="route-details">4 hours • 236 miles</p>
+                    <p class="route-price">From $32</p>
+                    <div class="route-features">
+                        <span>WiFi</span>
+                        <span>AC</span>
+                        <span>USB</span>
+                    </div>
+                    <button class="book-route-btn">Book Now</button>
+                </div>
+            </div>
+            
+            <div class="route-card">
+                <div class="route-image">🗽</div>
+                <div class="route-info">
+                    <h3>Washington DC → New York</h3>
+                    <p class="route-details">4.5 hours • 225 miles</p>
+                    <p class="route-price">From $38</p>
+                    <div class="route-features">
+                        <span>WiFi</span>
+                        <span>AC</span>
+                        <span>USB</span>
+                    </div>
+                    <button class="book-route-btn">Book Now</button>
+                </div>
+            </div>
+            
+            <div class="route-card">
+                <div class="route-image">🌉</div>
+                <div class="route-info">
+                    <h3>Seattle → Portland</h3>
+                    <p class="route-details">3.5 hours • 173 miles</p>
+                    <p class="route-price">From $28</p>
+                    <div class="route-features">
+                        <span>WiFi</span>
+                        <span>AC</span>
+                        <span>USB</span>
+                    </div>
+                    <button class="book-route-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Module 4: Booking Section -->
+    <section class="booking-section" id="booking">
+        <div class="booking-container">
+            <div class="booking-form">
+                <h2>Book Your Ticket</h2>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>From</label>
+                            <input type="text" placeholder="Departure City" required>
+                        </div>
+                        <div class="form-group">
+                            <label>To</label>
+                            <input type="text" placeholder="Destination City" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Travel Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Passengers</label>
+                            <select required>
+                                <option value="">Select</option>
+                                <option value="1">1 Passenger</option>
+                                <option value="2">2 Passengers</option>
+                                <option value="3">3 Passengers</option>
+                                <option value="4">4 Passengers</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Seat Type</label>
+                        <div class="seat-options">
+                            <label class="seat-option">
+                                <input type="radio" name="seatType" value="economy" checked>
+                                <span>Economy</span>
+                                <span class="seat-price">$29</span>
+                            </label>
+                            <label class="seat-option">
+                                <input type="radio" name="seatType" value="premium">
+                                <span>Premium</span>
+                                <span class="seat-price">$49</span>
+                            </label>
+                            <label class="seat-option">
+                                <input type="radio" name="seatType" value="business">
+                                <span>Business</span>
+                                <span class="seat-price">$79</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Proceed to Payment</button>
+                </form>
+            </div>
+            
+            <div class="booking-info">
+                <h3>Why Book With Us?</h3>
+                <div class="info-item">
+                    <span class="info-icon">✓</span>
+                    <div>
+                        <h4>Easy Booking</h4>
+                        <p>Book your tickets in just a few clicks</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">✓</span>
+                    <div>
+                        <h4>Instant Confirmation</h4>
+                        <p>Receive your e-ticket immediately</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">✓</span>
+                    <div>
+                        <h4>Free Cancellation</h4>
+                        <p>Cancel up to 24 hours before departure</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">✓</span>
+                    <div>
+                        <h4>24/7 Support</h4>
+                        <p>Our team is always here to help</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Module 5: Bus Schedule -->
+    <section class="schedule-section" id="schedule">
+        <div class="section-header">
+            <h2>Bus Schedule</h2>
+            <p>Check departure and arrival times</p>
+        </div>
+        
+        <div class="schedule-tabs">
+            <button class="tab-btn active" data-tab="today">Today</button>
+            <button class="tab-btn" data-tab="tomorrow">Tomorrow</button>
+            <button class="tab-btn" data-tab="week">This Week</button>
+        </div>
+        
+        <div class="schedule-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Route</th>
+                        <th>Departure</th>
+                        <th>Arrival</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>New York → Boston</td>
+                        <td>06:00 AM</td>
+                        <td>10:00 AM</td>
+                        <td>4h</td>
+                        <td>$29</td>
+                        <td><span class="status on-time">On Time</span></td>
+                        <td><button class="book-btn">Book</button></td>
+                    </tr>
+                    <tr>
+                        <td>Los Angeles → San Francisco</td>
+                        <td>07:30 AM</td>
+                        <td>01:30 PM</td>
+                        <td>6h</td>
+                        <td>$45</td>
+                        <td><span class="status delayed">Delayed</span></td>
+                        <td><button class="book-btn">Book</button></td>
+                    </tr>
+                    <tr>
+                        <td>Chicago → Detroit</td>
+                        <td>08:00 AM</td>
+                        <td>01:00 PM</td>
+                        <td>5h</td>
+                        <td>$35</td>
+                        <td><span class="status on-time">On Time</span></td>
+                        <td><button class="book-btn">Book</button></td>
+                    </tr>
+                    <tr>
+                        <td>Miami → Orlando</td>
+                        <td>09:00 AM</td>
+                        <td>01:00 PM</td>
+                        <td>4h</td>
+                        <td>$32</td>
+                        <td><span class="status on-time">On Time</span></td>
+                        <td><button class="book-btn">Book</button></td>
+                    </tr>
+                    <tr>
+                        <td>Washington DC → New York</td>
+                        <td>10:00 AM</td>
+                        <td>02:30 PM</td>
+                        <td>4.5h</td>
+                        <td>$38</td>
+                        <td><span class="status on-time">On Time</span></td>
+                        <td><button class="book-btn">Book</button></td>
+                    </tr>
+                    <tr>
+                        <td>Seattle → Portland</td>
+                        <td>11:00 AM</td>
+                        <td>02:30 PM</td>
+                        <td>3.5h</td>
+                        <td>$28</td>
+                        <td><span class="status on-time">On Time</span></td>
+                        <td><button class="book-btn">Book</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Module 6: Features -->
+    <section class="features-section" id="features">
+        <div class="section-header">
+            <h2>Why Choose BusGo?</h2>
+            <p>Experience the difference with our premium services</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Safety First</h3>
+                <p>Our buses undergo regular safety inspections and our drivers are professionally trained.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📶</div>
+                <h3>Free WiFi</h3>
+                <p>Stay connected throughout your journey with our complimentary high-speed WiFi.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">❄️</div>
+                <h3>Climate Control</h3>
+                <p>Enjoy comfortable temperatures with our advanced air conditioning system.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔌</div>
+                <h3>USB Charging</h3>
+                <p>Keep your devices charged with USB ports at every seat.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🪑</div>
+                <h3>Comfortable Seats</h3>
+                <p>Relax in our spacious, ergonomic seats designed for long journeys.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎬</div>
+                <h3>Entertainment</h3>
+                <p>Enjoy movies and shows on our onboard entertainment system.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🍿</div>
+                <h3>Snacks & Drinks</h3>
+                <p>Purchase refreshments from our onboard snack bar.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🧳</div>
+                <h3>Luggage Allowance</h3>
+                <p>Each passenger gets 2 free checked bags and 1 carry-on.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Module 7: Testimonials -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <h2>What Our Customers Say</h2>
+            <p>Real experiences from real travelers</p>
+        </div>
+        
+        <div class="testimonials-slider">
+            <div class="testimonial-card active">
+                <div class="testimonial-content">
+                    <div class="quote-icon">"</div>
+                    <p>Excellent service! The bus was clean, comfortable, and arrived on time. The WiFi was a bonus for working during the trip.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Business Traveler</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">"</div>
+                    <p>Best bus travel experience I've ever had. The staff was friendly and the seats were incredibly comfortable. Highly recommend!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Tourist</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">"</div>
+                    <p>Affordable prices without compromising on quality. I travel weekly for work and BusGo has become my go-to choice.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>Commuter</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonial-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </section>
+
+    <!-- Module 8: Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Have questions? We're here to help!</p>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <h4>Address</h4>
+                        <p>123 Transport Street, New York, NY 10001</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+1 (800) 555-BUSGO</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <div>
+                        <h4>Email</h4>
+                        <p>support@busgo.com</p>
+                    </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">🕐</span>
+                    <div>
+                        <h4>Hours</h4>
+                        <p>24/7 Customer Support</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#">📘</a>
+                    <a href="#">🐦</a>
+                    <a href="#">📸</a>
+                    <a href="#">▶️</a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Module 9: Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <span class="logo-icon">🚌</span>
+                    <h3>BusGo</h3>
+                </div>
+                <p>Your trusted partner for comfortable and reliable bus transportation across the nation.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#routes">Routes</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Cancellation Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+p>Subscribe for exclusive deals and updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 BusGo. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#">📘</a>
+                <a href="#">🐦</a>
+                <a href="#">📸</a>
+                <a href="#">▶️</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-message" id="toastMessage"></span>
+        <button class="toast-close" id="toastClose">×</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
